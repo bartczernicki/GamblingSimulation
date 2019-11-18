@@ -7,25 +7,29 @@ namespace GamblingSimulation
     {
         static void Main(string[] args)
         {
+            // Total dollar amount after all simulations
+            // Note: this should be set to zero
+            var overAllNetAmountAfterAllSimulations = 0;
+
             // Random seed based on Date ticks
             var seed = (int)DateTime.Now.Ticks;
             var random = new Random(seed);
 
+            // PARAMETERS
             // Betting scales of dollar amount for each bet.
-            // After each bet "loss", the next bet is the next tier
+            // After each bet "loss", the next bet is the next dollar tier
+            // For example, If your bet is 1000 and you lose the next bet is 1250 and son on,
+            //      until you reach the maximum (i.e. 2000).  That is a single betting "round".
             var bettingDollarScales = new int[] { 1000, 1250, 1500, 1750, 2000 };
 
             // Percentage of being correct on a single bet
-            var percentageOfCorrectBet = 50;
+            var percentageOfCorrectBet = 48;
 
             // Number of betting "rounds"
             var numberOfBettingRounds = 4;
 
             // Total number of simulations to run
-            var numberOfSimulations = 500;
-
-            // Total dollar amount after all simulations
-            var overAllNetAmountAfterAllSimulations = 0;
+            var numberOfSimulations = 100;
 
             // number of individual simulations
             for (int i = 0; i < numberOfSimulations; i++)

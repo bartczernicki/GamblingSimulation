@@ -8,4 +8,4 @@ Parameters include: bet dollar scales, probability of each bet winning, number o
 Requirements:
 * Visual Studio 2019, .NET Core 3.0
 
-![Training Job](https://github.com/bartczernicki/GamblingSimulation/blob/master/GamblingSimulation.png)
+![Gambling Simulation](https://github.com/bartczernicki/GamblingSimulation/blob/master/Images/GamblingSimulationScreen.png)

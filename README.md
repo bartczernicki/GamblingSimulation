@@ -1,4 +1,4 @@
-# GamblingSimulation
+# Martingale-like: Gambling Simulation
 Simple C#/.Net Core implementation of a Martingale-like betting system:
 
 https://en.wikipedia.org/wiki/Martingale_(betting_system)

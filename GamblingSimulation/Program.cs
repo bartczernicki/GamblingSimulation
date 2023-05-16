@@ -42,6 +42,7 @@ namespace GamblingSimulation
                 {
                     var amount = 0;
 
+
                     // Bet until win once, then stop
                     for (int k = 0; k != bettingDollarScales.Length; k++)
                     {
